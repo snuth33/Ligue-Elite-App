@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/favicon2.ico" />
+  <link rel="stylesheet" href="./_assets/style.fab76bc0.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ligue Elite App</title>
+</head>
+<body>
+
+  <div id="page">
+
+    <table id="chronometre">
+      <tr>
+        <td>
+          <button id="test">CHRONOMETRE</button>
+        </td>
+      </tr>
+    </table>
+
+    <table id="reset-score">
+      <tr>
+        <td>
+          <button id="reset">RESET SCORE</button>
+        </td>
+      </tr>
+    </table>
+
+
+    <div id="logo-nom">
+      <table id="tab-logo" cellpadding="20" width="600">
+
+        <tr>
+          <td>
+            <select id="equipe-domicile">
+              <option value="ANGERS">EQUIPE</option>
+              <option value="ANGERS">ANGERS</option>
+              <option value="ANGLET">ANGLET</option>
+              <option value="BORDEAUX">BORDEAUX</option>
+              <option value="CAEN">CAEN</option>
+              <option value="GARGES">GARGES</option>
+              <option value="GRENOBLE">GRENOBLE</option>
+              <option value="RETHEL">RETHEL</option>
+              <option value="RIS-ORANGIS">RIS-ORANGIS</option>
+              <option value="VIERZON">VIERZON</option>
+              <option value="VILLENEUVE">VILLENEUVE</option>
+            </select>
+          </td>
+
+          <td>
+            <select id="equipe-visiteur">
+              <option value="ANGERS">EQUIPE</option>
+              <option value="ANGERS">ANGERS</option>
+              <option value="ANGLET">ANGLET</option>
+              <option value="BORDEAUX">BORDEAUX</option>
+              <option value="CAEN">CAEN</option>
+              <option value="GARGES">GARGES</option>
+              <option value="GRENOBLE">GRENOBLE</option>
+              <option value="RETHEL">RETHEL</option>
+              <option value="RIS-ORANGIS">RIS-ORANGIS</option>
+              <option value="VIERZON">VIERZON</option>
+              <option value="VILLENEUVE">VILLENEUVE</option>
+            </select>
+          </td>
+        </tr>
+
+          <tr>
+              <td id="nom-domicile">EQUIPE</td>
+              <td id="nom-visiteur">EQUIPE</td>
+          </tr>
+
+          <tr>
+            <td id="score-domicile">0</td>
+            <td id="score-visiteur">0</td>
+          </tr>
+
+          <tr id="bouton-score">
+            <td>
+                <button id="score-domicile+">+</button>
+                <button id="score-domicile-">-</button>
+            </td>
+
+            <td>
+                <button id="score-visiteur+">+</button>
+                <button id="score-visiteur-">-</button>
+            </td>
+          </tr>
+        </table>
+
+        <div id="periode">
+          <button id="Periode1">Période 1</button>
+          <button id="MT">Mi-Temps</button>
+          <button id="Periode2">Période 2</button>
+          <button id="PRL">Prolongation</button>
+          <button id="TAB">Tirs au but</button>
+          <button id="Temps-mort">Temps-Mort</button>
+        </div>
+
+
+        <table id="liste-joueurs">
+          <tr>
+              <td id="equipe-do">
+                <div id="EQUIPE">
+                  <table width="400">
+                    <tr>
+                        <th>Joueur</th>
+                        <th>But</th>
+                        <th>Penalité</th>
+                    </tr>
+                  </table>
+                </div>
+
+                <div id="ANGERS">
+                  <table width="400">
+                    <tr>
+                        <th>Joueur</th>
+                        <th>But</th>
+                        <th>Penalité</th>
+                    </tr>
+                    
+                    <tr>
+                      <td>#1 Adrien Desoppis</td>
+                      <td class='but' id='but-Adrien-Desoppis' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Adrien-Desoppis' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#2 Charly Hallard</td>
+                      <td class='but' id='but-Charly-Hallard' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Charly-Hallard' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#3 Joao Perez</td>
+                      <td class='but' id='but-Joao-Perez' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Joao-Perez' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#4 Mathieu Desoppis</td>
+                      <td class='but' id='but-Mathieu-Desoppis' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Mathieu-Desoppis' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#5 Melvin Voile</td>
+                      <td class='but' id='but-Melvin-Voile' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Melvin-Voile' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#6 Jean-François Ladonne</td>
+                      <td class='but' id='but-Jean-François-Ladonne' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Jean-François-Ladonne' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#7 William Rave</td>
+                      <td class='but' id='but-William-Rave' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-William-Rave' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#8 Matheo Candellier</td>
+                      <td class='but' id='but-Matheo-Candellier' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Matheo-Candellier' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#9 Benjamin Bellotte</td>
+                      <td class='but' id='but-Benjamin-Bellotte' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Benjamin-Bellotte' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#10 Maxime Burellier</td>
+                      <td class='but' id='but-Maxime-Burellier' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Maxime-Burellier' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#11 Pierre-Yves Albert</td>
+                      <td class='but' id='but-Pierre-Yves-Albert' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Pierre-Yves-Albert' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#12 Thomas Charreau</td>
+                      <td class='but' id='but-Thomas-Charreau' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Thomas-Charreau' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#13 Amaury Kallenbrum</td>
+                      <td class='but' id='but-Amaury-Kallenbrum' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Amaury-Kallenbrum' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#14 Alexis Normand</td>
+                      <td class='but' id='but-Alexis-Normand' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Alexis-Normand' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#15 Alexis Thobois</td>
+                      <td class='but' id='but-Alexis-Thobois' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Alexis-Thobois' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#16 Gaspard Dufeutrelle</td>
+                      <td class='but' id='but-Gaspard-Dufeutrelle' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Gaspard-Dufeutrelle' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#17 Victor Bureau</td>
+                      <td class='but' id='but-Victor-Bureau' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Victor-Bureau' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#18 Leo Gricourt</td>
+                      <td class='but' id='but-Leo-Gricourt' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Leo-Gricourt' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#19 Pauline Bernard</td>
+                      <td class='but' id='but-Pauline-Bernard' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Pauline-Bernard' type='button'><button>+</button></td>
+                      </tr>
+        
+                  </table>
+                </div>
+
+                <div id="ANGLET">
+                  <table width="400">
+                    <tr>
+                        <th>Joueur</th>
+                        <th>But</th>
+                        <th>Penalité</th>
+                    </tr>
+
+                    
+                  </table>
+                </div>
+
+                <div id="BORDEAUX">
+                  <table width="400">
+                    <tr>
+                        <th>Joueur</th>
+                        <th>But</th>
+                        <th>Penalité</th>
+                    </tr>
+                  </table>
+                </div>
+
+                <div id="CAEN">
+                  <table width="400">
+                    <tr>
+                        <th>Joueur</th>
+                        <th>But</th>
+                        <th>Penalité</th>
+                    </tr>
+                  </table>
+                </div>
+
+                <div id="GARGES">
+                  <table width="400">
+                    <tr>
+                        <th>Joueur</th>
+                        <th>But</th>
+                        <th>Penalité</th>
+                    </tr>
+                  </table>
+                </div>
+
+                <div id="GRENOBLE">
+                  <table width="400">
+                    <tr>
+                        <th>Joueur</th>
+                        <th>But</th>
+                        <th>Penalité</th>
+                    </tr>
+                  </table>
+                </div>
+
+                <div id="RIS-ORANGIS">
+                  <table width="400">
+                    <tr>
+                        <th>Joueur</th>
+                        <th>But</th>
+                        <th>Penalité</th>
+                    </tr>
+                  </table>
+                </div>
+
+                <div id="RETHEL">
+                  <table width="400">
+                    <tr>
+                        <th>Joueur</th>
+                        <th>But</th>
+                        <th>Penalité</th>
+                    </tr>
+                  </table>
+                </div>
+
+                <div id="VIERZON">
+                  <table width="400">
+                    <tr>
+                        <th>Joueur</th>
+                        <th>But</th>
+                        <th>Penalité</th>
+                    </tr>
+                  </table>
+                </div>
+
+                <div id="VILLENEUVE">
+                  <table width="400">
+                    <tr>
+                        <th>Joueur</th>
+                        <th>But</th>
+                        <th>Penalité</th>
+                    </tr>
+                    
+                    <tr>
+                      <td>#37 Theo Issenhuth</td>
+                      <td class='but' id='but-Theo-Issenhuth' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Theo-Issenhuth' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#41 Daniel Brabec</td>
+                      <td class='but' id='but-Daniel-Brabec' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Daniel-Brabec' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#5 Karl Gabillet</td>
+                      <td class='but' id='but-Karl-Gabillet' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Karl-Gabillet' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#77 Alexandre Naud</td>
+                      <td class='but' id='but-Alexandre-Naud' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Alexandre-Naud' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#26 Delfino Varela</td>
+                      <td class='but' id='but-Delfino-Varela' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Delfino-Varela' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#79 Louis Allo</td>
+                      <td class='but' id='but-Louis-Allo' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Louis-Allo' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#13 Matteo Mahieu</td>
+                      <td class='but' id='but-Matteo-Mahieu' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Matteo-Mahieu' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#9 Edouard Clisson</td>
+                      <td class='but' id='but-Edouard-Clisson' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Edouard-Clisson' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#21 Charlie Godano</td>
+                      <td class='but' id='but-Charlie-Godano' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Charlie-Godano' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#19 Brandon Glover</td>
+                      <td class='but' id='but-Brandon-Glover' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Brandon-Glover' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#20 Bruno Palma</td>
+                      <td class='but' id='but-Bruno-Palma' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Bruno-Palma' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#7 Leon Le Bohellec</td>
+                      <td class='but' id='but-Leon-Le Bohellec' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Leon-Le Bohellec' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#4 Clement Gregoire</td>
+                      <td class='but' id='but-Clement-Gregoire' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Clement-Gregoire' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#24 Florian  Schneider</td>
+                      <td class='but' id='but-Florian -Schneider' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Florian -Schneider' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#71 Benjamin Peltier</td>
+                      <td class='but' id='but-Benjamin-Peltier' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Benjamin-Peltier' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#10 Julien Clisson</td>
+                      <td class='but' id='but-Julien-Clisson' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Julien-Clisson' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#8 Louis Delporte</td>
+                      <td class='but' id='but-Louis-Delporte' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Louis-Delporte' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#24 Alexandre Pamart</td>
+                      <td class='but' id='but-Alexandre-Pamart' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Alexandre-Pamart' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#31 Gwendal Anglade</td>
+                      <td class='but' id='but-Gwendal-Anglade' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Gwendal-Anglade' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#2 Karl Lacombe</td>
+                      <td class='but' id='but-Karl-Lacombe' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Karl-Lacombe' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#6 Leo Cuzin</td>
+                      <td class='but' id='but-Leo-Cuzin' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Leo-Cuzin' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#69 Arthur Delvaille</td>
+                      <td class='but' id='but-Arthur-Delvaille' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Arthur-Delvaille' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#45 Sean Druart</td>
+                      <td class='but' id='but-Sean-Druart' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Sean-Druart' type='button'><button>+</button></td>
+                      </tr>
+            
+                  </table>
+                </div>
+              </td>
+                
+              <td id="equipe-do">
+                <div id="EQUIPE-V">
+                  <table width="400">
+                    <tr>
+                        <th>Joueur</th>
+                        <th>But</th>
+                        <th>Penalité</th>
+                    </tr>
+                  </table>
+                </div>
+
+                <div id="ANGERS-V">
+                  <table width="400">
+                    <tr>
+                        <th>Joueur</th>
+                        <th>But</th>
+                        <th>Penalité</th>
+                    </tr>
+
+                    
+                  </table>
+                </div>
+
+                <div id="ANGLET-V">
+                  <table width="400">
+                    <tr>
+                        <th>Joueur</th>
+                        <th>But</th>
+                        <th>Penalité</th>
+                    </tr>
+                  </table>
+                </div>
+
+                <div id="BORDEAUX-V">
+                  <table width="400">
+                    <tr>
+                        <th>Joueur</th>
+                        <th>But</th>
+                        <th>Penalité</th>
+                    </tr>
+                  </table>
+                </div>
+
+                <div id="CAEN-V">
+                  <table width="400">
+                    <tr>
+                        <th>Joueur</th>
+                        <th>But</th>
+                        <th>Penalité</th>
+                    </tr>
+                  </table>
+                </div>
+
+                <div id="GARGES-V">
+                  <table width="400">
+                    <tr>
+                        <th>Joueur</th>
+                        <th>But</th>
+                        <th>Penalité</th>
+                    </tr>
+                  </table>
+                </div>
+
+                <div id="GRENOBLE-V">
+                  <table width="400">
+                    <tr>
+                        <th>Joueur</th>
+                        <th>But</th>
+                        <th>Penalité</th>
+                    </tr>
+                  </table>
+                </div>
+
+                <div id="RIS-ORANGIS-V">
+                  <table width="400">
+                    <tr>
+                        <th>Joueur</th>
+                        <th>But</th>
+                        <th>Penalité</th>
+                    </tr>
+                  </table>
+                </div>
+
+                <div id="RETHEL-V">
+                  <table width="400">
+                    <tr>
+                        <th>Joueur</th>
+                        <th>But</th>
+                        <th>Penalité</th>
+                    </tr>
+                  </table>
+                </div>
+
+                <div id="VIERZON-V">
+                  <table width="400">
+                    <tr>
+                        <th>Joueur</th>
+                        <th>But</th>
+                        <th>Penalité</th>
+                    </tr>
+                  </table>
+                </div>
+
+                <div id="VILLENEUVE-V">
+                  <table width="400">
+                    <tr>
+                        <th>Joueur</th>
+                        <th>But</th>
+                        <th>Penalité</th>
+                    </tr>
+    
+                    <tr>
+                      <td>#37 Theo Issenhuth</td>
+                      <td class='but' id='but-Theo-Issenhuth-v' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Theo-Issenhuth-v' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#41 Daniel Brabec</td>
+                      <td class='but' id='but-Daniel-Brabec-v' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Daniel-Brabec-v' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#5 Karl Gabillet</td>
+                      <td class='but' id='but-Karl-Gabillet-v' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Karl-Gabillet-v' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#77 Alexandre Naud</td>
+                      <td class='but' id='but-Alexandre-Naud-v' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Alexandre-Naud-v' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#26 Delfino Varela</td>
+                      <td class='but' id='but-Delfino-Varela-v' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Delfino-Varela-v' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#79 Louis Allo</td>
+                      <td class='but' id='but-Louis-Allo-v' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Louis-Allo-v' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#13 Matteo Mahieu</td>
+                      <td class='but' id='but-Matteo-Mahieu-v' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Matteo-Mahieu-v' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#9 Edouard Clisson</td>
+                      <td class='but' id='but-Edouard-Clisson-v' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Edouard-Clisson-v' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#21 Charlie Godano</td>
+                      <td class='but' id='but-Charlie-Godano-v' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Charlie-Godano-v' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#19 Brandon Glover</td>
+                      <td class='but' id='but-Brandon-Glover-v' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Brandon-Glover-v' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#20 Bruno Palma</td>
+                      <td class='but' id='but-Bruno-Palma-v' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Bruno-Palma-v' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#7 Leon Le Bohellec</td>
+                      <td class='but' id='but-Leon-Le Bohellec-v' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Leon-Le Bohellec-v' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#4 Clement Gregoire</td>
+                      <td class='but' id='but-Clement-Gregoire-v' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Clement-Gregoire-v' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#24 Florian  Schneider</td>
+                      <td class='but' id='but-Florian -Schneider-v' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Florian -Schneider-v' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#71 Benjamin Peltier</td>
+                      <td class='but' id='but-Benjamin-Peltier-v' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Benjamin-Peltier-v' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#10 Julien Clisson</td>
+                      <td class='but' id='but-Julien-Clisson-v' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Julien-Clisson-v' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#8 Louis Delporte</td>
+                      <td class='but' id='but-Louis-Delporte-v' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Louis-Delporte-v' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#24 Alexandre Pamart</td>
+                      <td class='but' id='but-Alexandre-Pamart-v' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Alexandre-Pamart-v' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#31 Gwendal Anglade</td>
+                      <td class='but' id='but-Gwendal-Anglade-v' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Gwendal-Anglade-v' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#2 Karl Lacombe</td>
+                      <td class='but' id='but-Karl-Lacombe-v' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Karl-Lacombe-v' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#6 Leo Cuzin</td>
+                      <td class='but' id='but-Leo-Cuzin-v' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Leo-Cuzin-v' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#69 Arthur Delvaille</td>
+                      <td class='but' id='but-Arthur-Delvaille-v' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Arthur-Delvaille-v' type='button'><button>+</button></td>
+                      </tr>
+                      <tr>
+                      <td>#45 Sean Druart</td>
+                      <td class='but' id='but-Sean-Druart-v' type='button'><button>+</button></td>
+                      <td class='pen' id='pen-Sean-Druart-v' type='button'><button>+</button></td>
+                      </tr>
+                  </table>
+                </div>
+              </td>
+
+          </tr>
+      </table>
+    </div>
+  </div>
+
+
+
+  
+  <script type="module" src="./_assets/index.7e02d622.js"></script>
+</body>
+
+<footer class="footer-distributed">
+
+  <div class="footer-left">
+
+    <h4>LIGUE ÉLITE APPLICATION</h4>
+
+    <img src="/noir&blanc.png" width="100" height="76">
+
+    <p class="footer-company-name">Copyrights © 2022 All Rights Reserved by Théo Issenhuth</p>
+  </div>
+
+  <div class="footer-center">
+
+    <div>
+      <h4>Contact</h4>
+    </div>
+
+    <div>
+      <i class="fa fa-phone"></i>
+      <p>07 - 62 - 20 - 37 - 87</p>
+    </div>
+
+    <div>
+      <i class="fa fa-envelope"></i>
+      <p><a href="mailto:issenhuththeo@gmail.com">issenhuththeo@gmail.com</a></p>
+    </div>
+
+    <div class="footer-icons">
+      <a href="https://facebook.com/issenhuth.theo" target="_blank"><i class="fa fa-facebook"></i></a>
+      <a href="https://www.instagram.com/theo_iss/" target="_blank"><i class="fa fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/th%C3%A9o-issenhuth/" target="_blank"><i class="fa fa-linkedin"></i></a>
+      <a href="https://www.youtube.com/channel/UCmLQCN_SWpVqIm7SZBz88ig/featured" target="_blank"><i class="fa fa-youtube"></i></a>
+    </div>
+
+  </div>
+
+  <div class="footer-right">
+
+    <h4>Liens Utiles</h4>
+
+    <div class="footer-links">
+      <p><a href="https://www.youtube.com/c/LigueElite" target="_blank">YouTube Ligue Élite</a></p>
+      <p><a href="https://ligueelite.fr/" target="_blank">Site Ligue Élite</a></p>
+      <p><a href="https://rolskanet.fr/sportif/synthese/rencontres/LH" target="_blank">Résultats en direct</a></p>
+    </div>
+    
+
+    
+
+  </div>
+
+</footer>
+
+</html>
